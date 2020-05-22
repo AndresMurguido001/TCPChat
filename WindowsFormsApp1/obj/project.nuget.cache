@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WC2l9V41EvmzbZXXPymKtQMu3173InirZ6T+S8DcBg16t1klSQuw3HP0tQCrrhZmgH40aAygd1sXkdy1OB0tWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andres.Murguido001\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
