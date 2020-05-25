@@ -161,7 +161,7 @@ namespace WindowsFormsApp1
         {
             // add to list of clients;
             list.TryAdd(obj.id, obj);
-            string msg = string.Format("Client {0} connected", obj.id);
+            string msg = string.Format("[Client {0}] connected", obj.id);
 
             WriteToLog(msg);
             SendTask(msg, obj.id);
@@ -182,7 +182,7 @@ namespace WindowsFormsApp1
             }
             // Client is no longer connected
             obj.client.Close();
-            msg = string.Format("Client {0} disconnected", obj.id);
+            msg = string.Format("[Client {0}] disconnected", obj.id);
             WriteToLog(msg);
             SendTask(msg, obj.id);
             list.TryRemove(obj.id, out NewClient tmp);
@@ -214,7 +214,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
-                        string msg = string.Format("Client {0}: {1}", obj.id, obj.data);
+                        string msg = string.Format("[Client {0}]: {1}", obj.id, obj.data);
                         WriteToLog(msg);
                         SendTask(msg, obj.id);
                         obj.data.Clear();
@@ -292,8 +292,8 @@ namespace WindowsFormsApp1
             {
                 string msg = sendInput.Text;
                 sendInput.Clear();
-                WriteToLog("Server (You): " + msg);
-                SendTask("Server: " + msg);
+                WriteToLog("[Server (You)]: " + msg);
+                SendTask("[Server]: " + msg);
             }
         }
 

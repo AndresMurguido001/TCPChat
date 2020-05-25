@@ -45,7 +45,7 @@
             this.ipInput.Name = "ipInput";
             this.ipInput.Size = new System.Drawing.Size(150, 23);
             this.ipInput.TabIndex = 0;
-            this.ipInput.Text = "192.168.86.81";
+            this.ipInput.Text = "127.0.0.1";
             // 
             // label1
             // 

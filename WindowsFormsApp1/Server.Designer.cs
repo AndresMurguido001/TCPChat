@@ -45,7 +45,7 @@
             this.ipAddressBox.Name = "ipAddressBox";
             this.ipAddressBox.Size = new System.Drawing.Size(144, 23);
             this.ipAddressBox.TabIndex = 0;
-            this.ipAddressBox.Text = "192.168.86.81";
+            this.ipAddressBox.Text = "127.0.0.1";
             // 
             // label1
             // 

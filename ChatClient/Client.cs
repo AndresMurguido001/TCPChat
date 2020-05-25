@@ -17,12 +17,19 @@ namespace ChatClient
     {
         private bool connected = false;
         private Thread client = null;
+
+        // Client state
         private struct NewClient
         {
+            // Stream to handle read / write
             public NetworkStream stream;
+            // TCP client to establish connection to server
             public TcpClient client;
+            // used to read and write data to stream
             public byte[] buffer;
+            // stores the result of translating the buffer to string
             public StringBuilder data;
+            // Syncs the clients
             public EventWaitHandle handle;
         }
 
@@ -230,7 +237,7 @@ namespace ChatClient
                     connected = status;
                     if (status)
                     {
-                        connectBtn.Text = "Disconnected";
+                        connectBtn.Text = "Disconnect";
                         WriteToLog("You are connected to the server...");
                     } 
                     else
@@ -244,16 +251,23 @@ namespace ChatClient
 
         private void SendBtn_Click(object sender, EventArgs eventArgs)
         {
-            if (sendInput.Text.Length > 0)
+            if (obj.client.Connected)
             {
-                string msg = sendInput.Text;
-                sendInput.Clear();
-                WriteToLog(string.Format("You: {0}", msg));
-
-                if (connected)
+                if (sendInput.Text.Length > 0)
                 {
-                    SendTask(msg);
+                    string msg = sendInput.Text;
+                    sendInput.Clear();
+                    WriteToLog(string.Format("[You]: {0}", msg));
+
+                    if (connected)
+                    {
+                        SendTask(msg);
+                    }
                 }
+            }
+            else
+            {
+                WriteToLog("ERROR: You are not connected to the server");
             }
         }
 
