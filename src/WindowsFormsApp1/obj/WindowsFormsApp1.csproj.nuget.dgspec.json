@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
+    "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+    "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "projectName": "WindowsFormsApp1",
-        "projectPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "packagesPath": "C:\\Users\\Andres.Murguido001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
+        "outputPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andres.Murguido001\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\ChatClient\\ChatClient.csproj",
+      "projectUniqueName": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\ChatClient\\ChatClient.csproj",
       "projectName": "ChatClient",
-      "projectPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\ChatClient\\ChatClient.csproj",
+      "projectPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\ChatClient\\ChatClient.csproj",
       "packagesPath": "C:\\Users\\Andres.Murguido001\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\ChatClient\\obj\\",
+      "outputPath": "C:\\Users\\Andres.Murguido001\\source\\repos\\WindowsFormsApp1\\src\\ChatClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andres.Murguido001\\AppData\\Roaming\\NuGet\\NuGet.Config",
