@@ -45,7 +45,7 @@
             this.ipInput.Name = "ipInput";
             this.ipInput.Size = new System.Drawing.Size(150, 23);
             this.ipInput.TabIndex = 0;
-            this.ipInput.Text = "127.0.0.1";
+            this.ipInput.Text = "192.168.86.81";
             // 
             // label1
             // 
@@ -107,6 +107,7 @@
             this.sendInput.Name = "sendInput";
             this.sendInput.Size = new System.Drawing.Size(424, 23);
             this.sendInput.TabIndex = 5;
+            this.sendInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SendInput_KeyDown);
             // 
             // sendBtn
             // 

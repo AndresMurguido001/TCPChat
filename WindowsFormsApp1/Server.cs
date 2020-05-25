@@ -71,10 +71,11 @@ namespace WindowsFormsApp1
 
             try
             {
-                WriteToLog("Server Started. Waiting for connections....");
+                
                 listener = new TcpListener(iPAddress, port);
                 listener.Start();
                 Activate(true);
+                WriteToLog("Server Started. Waiting for connections....");
 
                 while (active)
                 {
@@ -105,7 +106,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception e)
             {
-                Console.WriteLine("Something went wrong: {0}", e.Message);
+                WriteToLog(string.Format("Something went wrong: {0}", e.Message));
             }
             finally
             {
@@ -294,6 +295,12 @@ namespace WindowsFormsApp1
                 WriteToLog("Server (You): " + msg);
                 SendTask("Server: " + msg);
             }
+        }
+
+        private void SendInput_KeyDown(object sender, KeyEventArgs keyEvent)
+        {
+            if (keyEvent.KeyCode == Keys.Enter)
+                sendBtn.PerformClick();
         }
 
     }

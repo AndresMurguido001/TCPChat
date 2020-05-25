@@ -257,22 +257,10 @@ namespace ChatClient
             }
         }
 
-        private void SendText_KeyDown(object sender, KeyEventArgs eventArgs)
+        private void SendInput_KeyDown(object sender, KeyEventArgs keyEvent)
         {
-            if (eventArgs.KeyCode == Keys.Enter)
-            {
-                if (sendInput.Text.Length > 0)
-                {
-                    string msg = sendInput.Text;
-                    sendInput.Clear();
-                    WriteToLog(string.Format("You: {0}", msg));
-
-                    if (connected)
-                    {
-                        SendTask(msg);
-                    }
-                }
-            }
+            if (keyEvent.KeyCode == Keys.Enter)
+                sendBtn.PerformClick();
         }
     }
 }
